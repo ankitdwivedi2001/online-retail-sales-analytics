@@ -32,14 +32,30 @@ Full queries are in [`online_retail_analysis.sql`](online_retail_analysis.sql).
 
 ## Dashboard (Power BI)
 
-Built an interactive Power BI dashboard connected live to the MySQL database, with KPI cards, Top-N filtering, and cross-filtering across all visuals - so clicking one chart filters the rest automatically.
+Built an interactive one-page Power BI dashboard connected live to the MySQL database: a monthly revenue trend plus Top-N bar charts for products, countries and customers, with cross-filtering across all visuals - so clicking one chart filters the rest automatically.
+
+<!-- TODO: upload a dashboard screenshot as dashboard.png, then add: ![Power BI dashboard](dashboard.png) -->
 
 ## Key Findings
 
-- Total revenue (excluding cancellations): **£9,726,006.95**
-- The UK dominates both revenue and order volume overall
-- Customers from the Netherlands and Ireland show much higher average order values than customers from Germany or France
-- A customer-concentration risk: a single customer in the Netherlands accounted for roughly **£280,000** in revenue - over half of that country's total sales - meaning a large chunk of one country's revenue depends on one buyer
+| Metric | Value |
+|---|---|
+| Gross sales (cancelled invoices excluded) | **£10.62M** across 22,064 orders |
+| Net revenue (after subtracting cancellations) | **£9,726,006.95** |
+| Revenue from the United Kingdom | **84.6%** (38 countries in total) |
+| Share of customer revenue from the top 10% of 4,339 customers | **61%** |
+| Peak month | **November 2011** - £1.50M, about double the monthly average |
+
+- **Customer-concentration risk:** a single Netherlands customer generated roughly **£280,000**, about **98% of all Netherlands revenue** - that country's sales depend almost entirely on one buyer
+- Netherlands (~£3,005) and Ireland (~£983) have much higher average order values than Germany (~£500), France (~£535) or the UK (~£446), driven by a few large wholesale-style accounts
+- Revenue is highly concentrated: the top 1% of customers drive ~32% of customer revenue
+- Several of the largest single orders were later cancelled in full, so product rankings were checked against cancellations before drawing conclusions
+
+## Recommendations
+
+- Protect key accounts with dedicated account management, given the dependence on a small group of customers
+- Plan stock and staffing ahead of the September-November peak
+- Use the high-value international accounts as a base for growth outside the UK
 
 ## Tools & Technologies
 
