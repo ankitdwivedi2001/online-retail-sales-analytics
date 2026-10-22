@@ -32,9 +32,9 @@ Full queries are in [`online_retail_analysis.sql`](online_retail_analysis.sql).
 
 ## Dashboard (Power BI)
 
-Built an interactive one-page Power BI dashboard connected live to the MySQL database: a monthly revenue trend plus Top-N bar charts for products, countries and customers, with cross-filtering across all visuals - so clicking one chart filters the rest automatically.
+Built an interactive one-page Power BI dashboard connected live to the MySQL database: KPI cards (revenue, orders, customers), a monthly revenue trend, and Top-N bar charts for products, countries and customers, with cross-filtering across all visuals - so clicking one chart filters the rest automatically.
 
-<!-- TODO: upload a dashboard screenshot as dashboard.png, then add: ![Power BI dashboard](dashboard.png) -->
+![Power BI dashboard](dashboard.png)
 
 ## Key Findings
 
